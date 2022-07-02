@@ -157,6 +157,7 @@ nav ul a:hover {
 
 .skills-table .item img {
     max-width: 6%;
+    min-width: 40px;
 }
 
 .skills-table .item .bar {
@@ -293,6 +294,7 @@ nav ul a:hover {
     border-radius: 10px;
     cursor: pointer;
     transition: .3s;
+    text-align: center;
 }
 
 .projects-grid .item:hover {
@@ -311,6 +313,7 @@ nav ul a:hover {
     color: #000;
     font-size: 1.2em;
     font-weight: 500;
+    text-align: center;
 }
 
 .projects-grid .item a span:hover {
@@ -362,6 +365,7 @@ nav ul a:hover {
 
 .contact-area .item img {
     width: 7%;
+    min-width: 40px;
 }
 
 .contact-area .item:nth-child(2) img {
@@ -382,4 +386,132 @@ nav ul a:hover {
 
 .contact-area .item a:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+
+    .quemsoueu p {
+        padding: .5em;
+        font-size: 1.1em;
+        line-height: 40px;
+    }
+
+    .projetos .projects-grid {
+        width: 800px;
+        max-width: 60%;
+        min-height: 600px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2em 1em;
+        row-gap: 20px;
+    }
+    
+    .projects-grid .item {
+        width: 90%;
+        height: 250px;
+        padding-bottom: 1em;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        width: 60%;
+    }
+
+    .main-area img {
+        width: 30%;
+    }
+
+    .quemsoueu p {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .projetos hr {
+        top: 0.8%;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    .projetos .projects-grid {
+        width: 800px;
+        max-width: 60%;
+        min-height: 600px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2em 1em;
+        row-gap: 20px;
+    }
+    
+    .projects-grid .item {
+        width: 80%;
+        height: 250px;
+        padding-bottom: 1em;
+        align-items: center;
+    }
+}
+
+@media (max-width: 568px) {
+    .quemsoueu p {
+        font-size: .9em;
+        text-align: center;
+    }
+
+    .contact-area .item span {
+        margin-left: 1.8em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 568px) {
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        width: 80%;
+    }
+
+    .main-area img {
+        width: 45%;
+    }
+
+    .contact-area .item span {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me .skills, 
+    .about-me .quemsoueu {
+        width: 800px;
+        max-width: 80%;
+        border-radius: 10px;
+    }
+
+    .projetos .projects-grid {
+        width: 800px;
+        max-width: 70%;
+        min-height: 600px;
+    }
+
+    .projects-grid .item {
+        width: 95%;
+    }
+
+    .projects-grid .item a span {
+        font-size: 1.3em;
+    }
+
+    .contato .contact-area {
+        max-width: 80%;
+    }
+
+    .contact-area .item span {
+        font-size: 1em;
+        margin-left: 1em;
+    }
 }
