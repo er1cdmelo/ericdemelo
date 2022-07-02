@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0c0c0c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    padding: 1.5em  .5em
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    transform: scale(1.1);
+}
+
+.main-area {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.main-area h1 {
+    font-size: 2.3em;
+}
+
+.main-area img {
+    width: 20%;
+}
+
+.btn {
+    background-color: #0c0c0c;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .6em 2.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #0c0c0c;
+}
+
+.area-separator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-separator hr {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.area-separator img {
+    width: 80px;
+    z-index: 2;
+    background-color: #0c0c0c;
+}
+
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.about-me .quemsoueu {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 800px;
+    max-width: 60%;
+    min-height: 300px;
+    margin-bottom: 3em;
+}
+
+.quemsoueu h3 {
+    border-bottom: 1px solid #fff;
+    padding: .5em;
+    font-size: 1.4em;
+}
+
+.quemsoueu p {
+    padding: .5em;
+    font-size: 1.3em;
+    line-height: 40px;
+}
+
+.about-me .skills {
+    border: 1px solid #fff;
+    width: 800px;
+    max-width: 60%;
+    min-height: 600px;
+    border-radius: 10px;
+}
+
+.skills h3 {
+    border-bottom: 1px solid #fff;
+    padding: .5em;
+    font-size: 1.4em;
+}
+
+.skills .skills-table {
+    width: 100%;
+    min-height: 400px; 
+    display: grid;
+}
+
+.skills-table .item {
+    display: flex;
+    align-items: center;
+    padding: 0 .5em;
+}
+
+.skills-table .item img {
+    max-width: 6%;
+}
+
+.skills-table .item .bar {
+    height: 10px;
+    background-color: #fff;
+    margin-left: 2.5em;
+    transition: .5s;
+    
+}
+
+.item:nth-child(1) .bar {
+    animation: bar-animation40 2s  1  linear;
+    width: 40%;
+}
+.item:nth-child(2) .bar {
+    animation: bar-animation30 2s  1  linear;
+    width: 30%;
+}
+.item:nth-child(3) .bar {
+    animation: bar-animation30 2s  1  linear;
+    width: 30%;
+}
+.item:nth-child(4) .bar {
+    animation: bar-animation40 2s  1  linear;
+    width: 40%;
+}
+.item:nth-child(5) .bar {
+    animation: bar-animation30 2s  1  linear;
+    width: 30%;
+}
+.item:nth-child(6) .bar {
+    animation: bar-animation20 2s  1  linear;
+    width: 20%;
+}
+.item:nth-child(7) .bar {
+    animation: bar-animation30 2s  1  linear;
+    width: 30%;
+}
+
+@keyframes bar-animation40 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes bar-animation20 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+@keyframes bar-animation30 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+.skills .others {
+    width: 100%;
+    min-height: 150px;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.others h4 {
+    font-size: 1.2em;
+    margin-bottom: .8em;
+}
+
+.others ul li {
+    font-size: 1.1em;
+}
+
+.projetos {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+    position: relative;
+}
+
+.projetos hr {
+    top: 2%;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.projetos h1 {
+    background-color: #0c0c0c;
+    z-index: 2;
+    padding: 0 2em;
+    font-size: 1.5em;
+}
+
+.projetos .projects-grid {
+    width: 800px;
+    max-width: 60%;
+    min-height: 600px;
+    border-radius: 10px;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items:center;
+    align-items: center;
+    padding: 2em 1em;
+    row-gap: 20px;
+    border: 1px solid #fff;
+}
+
+.projects-grid .item {
+    width: 90%;
+    height: 250px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projects-grid .item:hover {
+    transform: scale(1.05);
+}
+
+.projects-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #7a7a7a;
+}
+
+.projects-grid .item a span {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.projects-grid .item a span:hover {
+    text-decoration: underline;
+}
+
+.contato {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
+    position: relative;
+}
+
+.contato hr {
+    top: 2%;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+.contato h1 {
+    background-color: #0c0c0c;
+    z-index: 2;
+    padding: 0 2em;
+    font-size: 1.5em;
+}
+
+.contato .contact-area {
+    border: 1px solid #fff;
+    width: 800px;
+    max-width: 60%;
+    min-height: 400px;
+    border-radius: 10px;
+    margin-top: 2em;
+    display: grid;
+    padding: 2em 0;
+}
+
+.contact-area .item {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.contact-area .item img {
+    width: 7%;
+}
+
+.contact-area .item:nth-child(2) img {
+    border-radius: 50%;
+}
+
+.contact-area .item:nth-child(4) img {
+    border-radius: 50%;
+}
+
+.contact-area .item span {
+    margin-left: 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-area .item a:hover {
+    transform: scale(1.1);
+}
