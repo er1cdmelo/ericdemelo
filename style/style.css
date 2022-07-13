@@ -56,9 +56,25 @@ nav ul a:hover {
 
 .main-area h1 {
     font-size: 2.3em;
+    position: relative;
 }
 
-.main-area img {
+.hello {
+    overflow: hidden;
+    animation: resize 1.5s 1 ease-in-out;
+    height: 50px;
+}
+
+@keyframes resize {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 300px;
+    }
+}
+    
+    .main-area img {
     width: 20%;
 }
 
