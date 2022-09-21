@@ -169,6 +169,7 @@ nav ul a:hover {
     display: flex;
     align-items: center;
     padding: 0 .5em;
+    margin: .5em 0;
 }
 
 .skills-table .item img {
@@ -200,15 +201,29 @@ nav ul a:hover {
     animation: bar-animation40 2s  1  linear;
     width: 40%;
 }
+
+.item:nth-child(5) {
+    padding: 0;
+}
+
+.item:nth-child(5) img {
+    max-width: 6%;
+    min-width: 56px;
+}
+
 .item:nth-child(5) .bar {
     animation: bar-animation30 2s  1  linear;
     width: 30%;
 }
 .item:nth-child(6) .bar {
     animation: bar-animation20 2s  1  linear;
-    width: 20%;
+    width: 30%;
 }
 .item:nth-child(7) .bar {
+    animation: bar-animation30 2s  1  linear;
+    width: 20%;
+}
+.item:nth-child(8) .bar {
     animation: bar-animation30 2s  1  linear;
     width: 30%;
 }
