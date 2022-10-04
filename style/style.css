@@ -206,11 +206,6 @@ nav ul a:hover {
     padding: 0;
 }
 
-.item:nth-child(5) img {
-    max-width: 6%;
-    min-width: 56px;
-}
-
 .item:nth-child(5) .bar {
     animation: bar-animation30 2s  1  linear;
     width: 30%;
